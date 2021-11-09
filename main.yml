@@ -7,10 +7,10 @@
 
   vars_prompt:
     - name: mas_email
-      prompt: App store email address: 
+      prompt: App store email address
 
     - name: mas_password
-      prompt: App store password: 
+      prompt: App store password
 
   vars_files:
     - default.config.yml

@@ -33,6 +33,7 @@ homebrew_installed_packages:
   - nvm
   - php
   - zsh-history-substring-search
+  - stow
 
 homebrew_taps:
   - homebrew/core
