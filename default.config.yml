@@ -34,6 +34,7 @@ homebrew_installed_packages:
   - php
   - zsh-history-substring-search
   - stow
+  - neovim
 
 homebrew_taps:
   - homebrew/core
@@ -45,6 +46,7 @@ homebrew_cask_apps:
   - firefox
   - google-chrome
   - slack
+  - iterm2
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
