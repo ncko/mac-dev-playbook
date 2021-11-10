@@ -36,6 +36,7 @@ homebrew_installed_packages:
   - stow
   - neovim
   - bat
+  - tmux
 
 homebrew_taps:
   - homebrew/core
