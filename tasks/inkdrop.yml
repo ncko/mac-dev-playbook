@@ -1,0 +1,18 @@
+- name: download inkdrop zip
+  get_url:
+    url: https://d3ip0rje8grhnl.cloudfront.net/v5.4.3/Inkdrop-5.4.3-arm64-Mac.zip
+    dest: "{{ lookup('env', 'HOME') }}/Downloads/Inkdrop.zip"
+  tags:
+    - inkdrop
+- name: unzip Inkdrop
+  shell: "unzip {{ lookup('env', 'HOME') }}/Downloads/Inkdrop.zip"
+  tags:
+    - inkdrop
+- name: mv Inkdrop app to Applications folder
+  shell: "mv Inkdrop.app {{ lookup('env', 'HOME') }}/Applications/Inkdrop.app"
+  tags:
+    - inkdrop
+- name: delete extra inkdrop generated files
+  shell: "rm -fr __MACOSX"
+  tags:
+    - inkdrop

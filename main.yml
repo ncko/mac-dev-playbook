@@ -43,6 +43,7 @@
     - include: tasks/ssh.yml
     - include: tasks/zsh.yml
     - include: tasks/dotfiles.yml
+    - include: tasks/inkdrop.yml
     - import_tasks: tasks/extra-packages.yml
       tags: ['extra-packages']
 
