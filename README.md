@@ -18,7 +18,7 @@ Install Ansible:
 $ export PATH="$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"
 ```
 
-Note: Double check that this path to the Python bin exists. You may have to play with it and explore a little bit.
+> **Note**: Double check that this path to the Python bin exists. You may have to play with it and explore a little bit.
 
 Then update pip and install ansible
 
@@ -37,5 +37,5 @@ $ ansible-playbook main.yml --ask-become-pass --ask-vault-pass
 ...
 ```
 
-Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run brew doctor to see if this is the case.
+> **Note**: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run brew doctor to see if this is the case.
 
