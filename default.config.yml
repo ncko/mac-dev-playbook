@@ -37,6 +37,7 @@ homebrew_installed_packages:
   - neovim
   - bat
   - tmux
+  - fzf
 
 homebrew_taps:
   - homebrew/core
