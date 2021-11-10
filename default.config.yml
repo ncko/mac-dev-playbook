@@ -49,7 +49,10 @@ homebrew_cask_apps:
   - iterm2
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+mas_installed_apps: 
+  - { id: 419330170, name: "moom" }
+  - { id: 975937182, name: "fantastical-calendar-tasks" }
+  - { id: 937984704, name: "amphetamine" }
 
 osx_script: "~/.osx --no-restart"
 
