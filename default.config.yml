@@ -35,6 +35,7 @@ homebrew_installed_packages:
   - zsh-history-substring-search
   - stow
   - neovim
+  - bat
 
 homebrew_taps:
   - homebrew/core
