@@ -1,0 +1,18 @@
+- name: clone dotfiles
+  ansible.builtin.git:
+    repo: git@github.com:ncko/.dotfiles.git
+    dest: ~/.dotfiles
+  tags:
+    - dotfiles
+- name: delete existing .zshrc file
+  shell: rm -f ~/.zshrc
+  tags:
+    - dotfiles
+- name: generate .gitconfig_user file
+  shell: echo "[user]\n\tname = {{ git_name }}\n\temail = {{ git_email }}" > ~/.gitconfig_user
+  tags:
+    - dotfiles
+- name: install dotfiles
+  shell: ~/.dotfiles/mac install
+  tags:
+    - dotfiles
