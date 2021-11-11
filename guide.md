@@ -1,5 +1,17 @@
 # Guide
 
+## Configure OSX
+- remap tab to esc
+- increase repeat speed
+- decrease repeat delay
+- enable number hotkeys for work spaces
+- dock & menu bar
+	- enable: automatically hide and show the menu bar
+	- enable: automatically hide and show the dock
+	- disable: animate opening applications
+	- decrease dock size
+	- disable magnification
+
 ## Setup Github CLI
 ```console
 $ gh auth login -h Github.com -w
