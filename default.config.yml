@@ -38,6 +38,7 @@ homebrew_installed_packages:
   - bat
   - tmux
   - fzf
+  - tldr
 
 homebrew_taps:
   - homebrew/core
