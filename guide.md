@@ -13,8 +13,8 @@
 	- disable magnification
 
 ## Setup Github CLI
-```console
-$ gh auth login -h Github.com -w
+```
+gh auth login -h Github.com -w
 ```
 
 ## Configure iterm2
