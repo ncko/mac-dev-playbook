@@ -4,6 +4,10 @@ This is an ansible playbook for setting up a new computer. The original was take
 
 ## Installation
 
+#### Step 0: Log in to the App Store
+
+Open the app store and log in.
+
 #### Step 1: Install Xcode
 On a fresh mac, install Apple's command line tools.
 
