@@ -25,11 +25,26 @@ Then update pip and install ansible
 ```
 sudo -H pip3 install --upgrade pip
 ```
+
+> **Troubleshoot**: After the previous command, if you receive an error "Cannot import name PackageFinder", the reinstall pip with
+> `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py`
+> then delete the downloaded script with `rm get-pip.py`
+> and retry the previous command
+
 ```
 pip3 install ansible
 ```
 
-Then clone or download this repository to your local drive, install the requirements and run the playbook:
+Check to see that you have ansible installed in your path
+
+
+```
+ansible --version
+```
+
+> **Troubleshoot**: if the response you get indicates that you do not have ansible, rerun the command to update your path and then check again with `ansible --version`
+
+Clone or download this repository to your local drive, install the requirements and run the playbook:
 
 ```
 ansible-galaxy install -r requirements.yml
