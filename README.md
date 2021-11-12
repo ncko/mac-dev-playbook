@@ -44,11 +44,20 @@ ansible --version
 
 > **Troubleshoot**: if the response you get indicates that you do not have ansible, rerun the command to update your path and then check again with `ansible --version`
 
-Clone or download this repository to your local drive, install the requirements and run the playbook:
+Clone this repository
+
+```
+git clone https://github.com/ncko/mac-dev-playbook
+```
+
+Install the requirements
 
 ```
 ansible-galaxy install -r requirements.yml
 ```
+
+Run the playbook
+
 ```
 ansible-playbook main.yml --ask-become-pass --ask-vault-pass
 ```
