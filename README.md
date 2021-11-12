@@ -4,13 +4,14 @@ This is an ansible playbook for setting up a new computer. The original was take
 
 ## Installation
 
+#### Step 1: Install Xcode
 On a fresh mac, install Apple's command line tools.
 
 ```
 xcode-select --install
 ```
 
-Then add Python3 and homebrew to the PATH
+#### Step 2: Add Python3 and homebrew to the PATH
 
 Install Ansible:
 
@@ -20,7 +21,7 @@ export PATH="$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"
 
 > **Note**: Double check that this path to the Python bin exists. You may have to play with it and explore a little bit.
 
-Then update pip and install ansible
+#### Step 3: Update pip
 
 ```
 sudo -H pip3 install --upgrade pip
@@ -31,32 +32,33 @@ sudo -H pip3 install --upgrade pip
 > then delete the downloaded script with `rm get-pip.py`
 > and retry the previous command
 
+#### Step 4: Install Ansible
+
 ```
 pip3 install ansible
 ```
 
 Check to see that you have ansible installed in your path
 
-
 ```
 ansible --version
 ```
 
-> **Troubleshoot**: if the response you get indicates that you do not have ansible, rerun the command to update your path and then check again with `ansible --version`
+> **Troubleshoot**: if the response you get indicates that you do not have ansible, rerun the command to update your path (under step 2) and then check again with `ansible --version`
 
-Clone this repository
+#### Step 5: Clone this repository
 
 ```
 git clone https://github.com/ncko/mac-dev-playbook
 ```
 
-Install the requirements
+#### Step 6: Install the requirements
 
 ```
 ansible-galaxy install -r requirements.yml
 ```
 
-Run the playbook
+#### Step 7: Run the playbook
 
 ```
 ansible-playbook main.yml --ask-become-pass --ask-vault-pass
