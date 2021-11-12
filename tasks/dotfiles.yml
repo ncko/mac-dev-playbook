@@ -1,6 +1,6 @@
 - name: clone dotfiles
   ansible.builtin.git:
-    repo: git@github.com:ncko/.dotfiles.git
+    repo: https://github.com/ncko/.dotfiles
     dest: ~/.dotfiles
   tags:
     - dotfiles
