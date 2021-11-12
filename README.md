@@ -73,3 +73,4 @@ ansible-playbook main.yml --ask-become-pass --ask-vault-pass
 ## Todo
 - Check for oh-my-zsh before attempting to install
 - Ask for the user's git info and app store info only when needed
+- show username's / emails in prompts so it is easier to see what you're typing
