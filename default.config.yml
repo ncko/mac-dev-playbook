@@ -39,6 +39,7 @@ homebrew_installed_packages:
   - tmux
   - fzf
   - tldr
+  - ripgrep
 
 homebrew_taps:
   - homebrew/core
