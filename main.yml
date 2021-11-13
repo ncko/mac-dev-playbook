@@ -5,13 +5,6 @@
     source_key: "./.ssh/id_rsa"
     dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
 
-  vars_prompt:
-    - name: mas_email
-      prompt: App store email address
-
-    - name: mas_password
-      prompt: App store password
-
   vars_files:
     - default.config.yml
 
@@ -21,6 +14,16 @@
       with_fileglob:
         - "{{ playbook_dir }}/config.yml"
       tags: ['always']
+    - pause:
+        prompt: App store email address
+        echo: true
+      register: mas_email
+      tags: mas
+    - pause:
+        prompt: App store password
+        echo: false
+      register: mas_password
+      tags: mas
 
   roles:
     - role: elliotweiser.osx-command-line-tools
