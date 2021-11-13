@@ -1,13 +1,3 @@
-- pause:
-    prompt: Enter git user email
-    echo: true
-  register: git_email
-  tags: dotfiles
-- pause:
-    prompt: Enter git user name
-    echo: true
-  register: git_name
-  tags: dotfiles
 - name: clone dotfiles
   ansible.builtin.git:
     repo: https://github.com/ncko/.dotfiles

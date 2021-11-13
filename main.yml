@@ -24,6 +24,16 @@
         echo: false
       register: mas_password
       tags: mas
+    - pause:
+        prompt: Enter git user email
+        echo: true
+      register: git_email
+      tags: dotfiles
+    - pause:
+        prompt: Enter git user name
+        echo: true
+      register: git_name
+      tags: dotfiles
 
   roles:
     - role: elliotweiser.osx-command-line-tools
