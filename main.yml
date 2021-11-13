@@ -12,12 +12,6 @@
     - name: mas_password
       prompt: App store password
 
-    - name: git_name
-      prompt: .gitconfig name
-
-    - name: git_email
-      prompt: .gitconfig email
-
   vars_files:
     - default.config.yml
 
@@ -42,7 +36,9 @@
   tasks:
     - include: tasks/ssh.yml
     - include: tasks/zsh.yml
-    - include: tasks/dotfiles.yml
+    - name: Dotfiles
+      include_tasks: tasks/dotfiles.yml
+      tags: dotfiles
     - include: tasks/inkdrop.yml
     - import_tasks: tasks/extra-packages.yml
       tags: ['extra-packages']

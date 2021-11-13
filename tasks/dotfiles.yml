@@ -1,18 +1,24 @@
+- pause:
+    prompt: Enter git user email
+    echo: true
+  register: git_email
+  tags: dotfiles
+- pause:
+    prompt: Enter git user name
+    echo: true
+  register: git_name
+  tags: dotfiles
 - name: clone dotfiles
   ansible.builtin.git:
     repo: https://github.com/ncko/.dotfiles
     dest: ~/.dotfiles
-  tags:
-    - dotfiles
+  tags: dotfiles
 - name: delete existing .zshrc file
   shell: rm -f ~/.zshrc
-  tags:
-    - dotfiles
+  tags: dotfiles
 - name: generate .gitconfig_user file
-  shell: echo "[user]\n\tname = {{ git_name }}\n\temail = {{ git_email }}" > ~/.gitconfig_user
-  tags:
-    - dotfiles
+  shell: echo "[user]\n\tname = {{ git_name.user_input }}\n\temail = {{ git_email.user_input }}" > ~/.gitconfig_user
+  tags: dotfiles
 - name: install dotfiles
   shell: ~/.dotfiles/mac install
-  tags:
-    - dotfiles
+  tags: dotfiles
