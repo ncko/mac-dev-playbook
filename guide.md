@@ -8,16 +8,22 @@ git remote set-url origin git@github.com:ncko/mac-dev-playbook.git
 ```
 
 ## Configure OSX
-- remap tab to esc
-- increase repeat speed
-- decrease repeat delay
-- enable number hotkeys for work spaces
 - dock & menu bar
 	- enable: automatically hide and show the menu bar
 	- enable: automatically hide and show the dock
 	- disable: animate opening applications
 	- decrease dock size
 	- disable magnification
+- Preferences
+    - keyboard
+        - remap tab to esc
+        - increase repeat speed
+        - decrease repeat delay
+        - enable number hotkeys w/ Cmd for work spaces
+    - Accessibility
+        - reduce motion
+
+
 
 ## Setup Github CLI
 ```
