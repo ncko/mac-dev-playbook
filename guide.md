@@ -20,10 +20,13 @@ git remote set-url origin git@github.com:ncko/mac-dev-playbook.git
         - increase repeat speed
         - decrease repeat delay
         - enable number hotkeys w/ Cmd for work spaces
+        - shortcuts
+            - mission control
+                - remap "switch to desktop #" to CMD+#
+            - services
+                - remap "Search Man Page Index in Terminal" to nothing
     - Accessibility
         - reduce motion
-
-
 
 ## Setup Github CLI
 ```
@@ -46,3 +49,10 @@ gh auth login -h Github.com -w
 - zoom
 - inkdrop
 - google chrome
+
+
+## TODO
+- npm: Install yarn
+- brew: Install composer
+- docs: set permissions on slack and zoom
+
