@@ -40,6 +40,7 @@ homebrew_installed_packages:
   - fzf
   - tldr
   - ripgrep
+  - gsed
 
 homebrew_taps:
   - homebrew/core
