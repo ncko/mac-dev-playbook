@@ -44,6 +44,10 @@ gh auth login -h Github.com -w
 ## Configure apps
 - moom
 - fantastical
+    - Preferences
+        - Appearance
+            - Menu bar icon shows: "Date & Weekday"
+            - check "show upcoming item in menu bar"
 - amphetamine
 - slack
 - zoom
@@ -55,4 +59,5 @@ gh auth login -h Github.com -w
 - npm: Install yarn
 - brew: Install composer
 - docs: set permissions on slack and zoom
+- update installation of nvm to use nvm's install script (remove from homebrew)
 
