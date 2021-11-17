@@ -71,8 +71,5 @@ ansible-playbook main.yml --ask-become-pass --ask-vault-pass
 > **Note**: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run brew doctor to see if this is the case.
 
 ## Todo
-- brew: gsed
-- npm: Install yarn
-- brew: Install composer
 - docs: set permissions on slack and zoom
 - update installation of nvm to use nvm's install script (remove from homebrew)
