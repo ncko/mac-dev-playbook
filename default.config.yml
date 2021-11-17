@@ -30,7 +30,6 @@ homebrew_installed_packages:
   - gpg
   - httpie
   - node
-  - nvm
   - php
   - zsh-history-substring-search
   - stow

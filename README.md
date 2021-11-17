@@ -72,4 +72,3 @@ ansible-playbook main.yml --ask-become-pass --ask-vault-pass
 
 ## Todo
 - docs: set permissions on slack and zoom
-- update installation of nvm to use nvm's install script (remove from homebrew)

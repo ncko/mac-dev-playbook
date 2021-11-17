@@ -54,6 +54,7 @@
       tags: dotfiles
     - include: tasks/vim.yml
     - include: tasks/inkdrop.yml
+    - include: tasks/nvm.yml
     - import_tasks: tasks/extra-packages.yml
       tags: ['extra-packages']
 
