@@ -25,6 +25,7 @@ sudoers_custom_config: ''
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - coreutils
   - git
   - github/gh/gh
   - gpg
