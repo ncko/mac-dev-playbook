@@ -41,6 +41,12 @@ homebrew_installed_packages:
   - tldr
   - ripgrep
   - gsed
+  - make
+  - cmake
+  - doxygen
+  - lcov
+  - gcovr
+  - ccache
 
 homebrew_taps:
   - homebrew/core
