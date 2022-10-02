@@ -47,6 +47,7 @@ homebrew_installed_packages:
   - lcov
   - gcovr
   - ccache
+  - wget
 
 homebrew_taps:
   - homebrew/core
