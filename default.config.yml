@@ -32,6 +32,7 @@ homebrew_installed_packages:
   - httpie
   - node
   - php
+  - composer
   - zsh-history-substring-search
   - stow
   - neovim
