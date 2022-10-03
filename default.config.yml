@@ -26,6 +26,9 @@ sudoers_custom_config: ''
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - coreutils
+  - gawk
+  - wget
+  - gsed
   - git
   - github/gh/gh
   - gpg
@@ -41,14 +44,12 @@ homebrew_installed_packages:
   - fzf
   - tldr
   - ripgrep
-  - gsed
   - make
   - cmake
   - doxygen
   - lcov
   - gcovr
   - ccache
-  - wget
 
 homebrew_taps:
   - homebrew/core
