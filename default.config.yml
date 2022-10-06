@@ -29,6 +29,7 @@ homebrew_installed_packages:
   - gawk
   - wget
   - gsed
+  - jq
   - git
   - github/gh/gh
   - gpg
