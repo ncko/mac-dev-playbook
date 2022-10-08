@@ -51,6 +51,7 @@ homebrew_installed_packages:
   - lcov
   - gcovr
   - ccache
+  - awslogs
 
 homebrew_taps:
   - homebrew/core
