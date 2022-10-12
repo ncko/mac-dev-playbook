@@ -52,10 +52,12 @@ homebrew_installed_packages:
   - gcovr
   - ccache
   - awslogs
+  - hashicorp/tap/terraform
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - hashicorp/tap
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
