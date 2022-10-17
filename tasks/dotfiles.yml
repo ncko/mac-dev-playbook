@@ -3,6 +3,11 @@
     repo: https://github.com/ncko/.dotfiles
     dest: ~/.dotfiles
   tags: dotfiles
+- name: clone packer for neovim
+  ansible.builtin.git:
+    depth: 1
+    repo: https://github.com/wbthomason/packer.nvim
+    dest: ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 - name: delete existing .zshrc file
   shell: rm -f ~/.zshrc
   tags: dotfiles
