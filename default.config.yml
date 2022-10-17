@@ -45,6 +45,7 @@ homebrew_installed_packages:
   - fzf
   - tldr
   - ripgrep
+  - fd
   - make
   - cmake
   - doxygen
