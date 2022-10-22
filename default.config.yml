@@ -54,11 +54,13 @@ homebrew_installed_packages:
   - ccache
   - awslogs
   - hashicorp/tap/terraform
+  - jira-cli
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - hashicorp/tap
+  - ankitpokhrel/jira-cli
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
