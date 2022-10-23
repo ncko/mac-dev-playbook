@@ -55,6 +55,7 @@ homebrew_installed_packages:
   - awslogs
   - hashicorp/tap/terraform
   - jira-cli
+  - tree-sitter
 
 homebrew_taps:
   - homebrew/core
