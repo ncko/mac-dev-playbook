@@ -43,7 +43,7 @@ homebrew_installed_packages:
   - bat
   - tmux
   - fzf
-  - tldr
+  - tealdeer
   - ripgrep
   - fd
   - make
